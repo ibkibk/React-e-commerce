@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Details from "../Component/Details";
-import Card from "../Component/Card";
+import Basket from "../Component/Basket";
 import NotFound from "../Component/NotFound";
 import ProductList from "../Component/ProductList";
 import NavBar from "../Component/NavBar";
@@ -15,7 +15,7 @@ class Routes extends Component {
         <Switch>
           <Route exact path="/" component={ProductList} />
           <Route path="/details" component={Details} />
-          <Route path="/card" component={Card} />
+          <Route path="/basket" component={Basket} />
           <Route component={NotFound} />
         </Switch>
       </Router>

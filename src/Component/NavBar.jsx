@@ -1,8 +1,9 @@
 import React from "react";
 import { Input, Menu } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import { Button } from "../Component/Utility/Button";
 
-function NavBar() {
+const NavBar = () => {
   return (
     <div>
       <Menu inverted style={{ borderRadius: "0" }} size="huge">
@@ -12,7 +13,7 @@ function NavBar() {
         </Menu.Item>
         <Menu inverted floated="right" size="huge">
           <Menu.Item>
-            <Link to="/card">Your Basket:10</Link>
+            <Link to="/basket">Your Basket:10</Link>
           </Menu.Item>
         </Menu>
       </Menu>
@@ -20,9 +21,9 @@ function NavBar() {
       <Menu.Item>
         <Input icon="search" placeholder="Search..." />
       </Menu.Item>
-      <h3>hello from navbar</h3>
+      <Button>hello from navbar</Button>
     </div>
   );
-}
+};
 
 export default NavBar;
