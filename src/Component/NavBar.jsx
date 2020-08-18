@@ -4,16 +4,17 @@ import { Input, Menu } from "semantic-ui-react";
 function NavBar() {
   return (
     <div>
-      <Menu inverted color="blue" size="huge">
-        <Menu.Item name="home" />
-        <Menu.Item name="messages" />
-        <Menu.Item name="friends" />
-        <Menu.Menu position="right">
-          <Menu.Item>
-            <Input icon="search" placeholder="Search..." />
-          </Menu.Item>
-        </Menu.Menu>
+      <Menu inverted style={{ borderRadius: "0" }} size="huge">
+        <Menu.Item> E-Commerce</Menu.Item>
+        <Menu.Item> Products</Menu.Item>
+        <Menu inverted floated="right" size="huge">
+          <Menu.Item> Your Basket</Menu.Item>
+        </Menu>
       </Menu>
+
+      <Menu.Item>
+        <Input icon="search" placeholder="Search..." />
+      </Menu.Item>
     </div>
   );
 }
