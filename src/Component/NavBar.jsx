@@ -7,7 +7,9 @@ const NavBar = () => {
   return (
     <div>
       <Menu inverted style={{ borderRadius: "0" }} size="huge">
-        <Menu.Item> E-Commerce</Menu.Item>
+        <Menu.Item>
+          E-COMMERCE <br></br>APP
+        </Menu.Item>
         <Menu.Item>
           <Link to="/">Products</Link>
         </Menu.Item>
