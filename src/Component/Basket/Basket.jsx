@@ -18,7 +18,7 @@ export default class Basket extends Component {
                   <h3>Your Basket</h3>
                   <BasketCol />
                   <BasketList value={value} />
-                  <BasketTotal />
+                  <BasketTotal value={value} />
                 </div>
               );
             } else {

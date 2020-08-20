@@ -43,7 +43,7 @@ function BasketItem({ item, value }) {
       </div>
       <div className="col-10 mx-auto col-lg-2">
         <div className="cart-icon" onClick={() => removeItem(id)}>
-          <srong>Remove</srong>
+          <strong>Remove</strong>
         </div>
       </div>
       <div className="col-10 mx-auto col-lg-2">

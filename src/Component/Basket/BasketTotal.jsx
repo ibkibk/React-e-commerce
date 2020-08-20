@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function BasketTotal({ value }) {
-  const { SubTotal, Tax, Total, clearBasket } = value;
+  const { subTotal, tax, total, clearBasket } = value;
   return (
     <div className="container">
       <div className="row">
@@ -18,15 +18,15 @@ function BasketTotal({ value }) {
           </Link>
           <h5>
             <span className="text-title">subtotal:</span>
-            <strong>${SubTotal}</strong>
+            <strong>${subTotal}</strong>
           </h5>
           <h5>
             <span className="text-title">tax:</span>
-            <strong>${Tax}</strong>
+            <strong>${tax}</strong>
           </h5>
           <h5>
             <span className="text-title">total:</span>
-            <strong>${Total}</strong>
+            <strong>${total}</strong>
           </h5>
         </div>
       </div>

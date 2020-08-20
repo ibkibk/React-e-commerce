@@ -1,7 +1,7 @@
 import React from "react";
 import { Input, Menu } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import { Button } from "../Component/Utility/Button";
+// import { Button } from "../Component/Utility/Button";
 
 const NavBar = () => {
   return (
