@@ -1,10 +1,13 @@
 import React from "react";
 import BasketItem from "./BasketItem";
 
-function BasketList() {
+function BasketList({ value }) {
+  const { basket } = value;
   return (
-    <div>
-      <BasketItem />
+    <div className="container-fluid">
+      {basket.map((item) => {
+        return <BasketItem key={item.id} item={item} value={value} />;
+      })}
     </div>
   );
 }

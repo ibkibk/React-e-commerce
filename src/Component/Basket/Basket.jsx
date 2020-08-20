@@ -3,6 +3,7 @@ import BasketCol from "./BasketCol";
 import EmptyBasket from "./EmptyBasket";
 import { ProductConsumer } from "../Context";
 import BasketList from "./BasketList";
+import BasketTotal from "./BasketTotal";
 
 export default class Basket extends Component {
   render() {
@@ -16,7 +17,8 @@ export default class Basket extends Component {
                 <div>
                   <h3>Your Basket</h3>
                   <BasketCol />
-                  <BasketList />
+                  <BasketList value={value} />
+                  <BasketTotal />
                 </div>
               );
             } else {

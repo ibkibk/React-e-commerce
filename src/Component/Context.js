@@ -7,13 +7,12 @@ export default class ProductProvider extends Component {
   state = {
     products: [],
     detailProduct: detailProduct,
-    basket: storeProducts,
-    // basket: [],
+    basket: [],
     isModalOpen: false,
     productOfModal: detailProduct,
-    basketSubTotal: 0,
-    basketTax: 0,
-    basketTotal: 0,
+    SubTotal: 0,
+    Tax: 0,
+    Total: 0,
   };
 
   componentDidMount() {
