@@ -6,6 +6,7 @@ import ProductList from "../Component/ProductList";
 import NavBar from "../Component/NavBar";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Switch, Route } from "react-router-dom";
+import Model from "../Component/Model";
 
 class Routes extends Component {
   render() {
@@ -18,6 +19,7 @@ class Routes extends Component {
           <Route path="/basket" component={Basket} />
           <Route component={NotFound} />
         </Switch>
+        <Model />
       </Router>
     );
   }
