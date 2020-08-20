@@ -57,6 +57,6 @@ const ModelContainer = styled.div`
   align-items: center;
   justify-content: center;
   #modal {
-    background: blue;
+    background: white;
   }
 `;

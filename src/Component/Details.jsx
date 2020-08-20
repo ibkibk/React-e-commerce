@@ -51,7 +51,7 @@ export default class Details extends Component {
                       disabled={inBasket ? true : false}
                       onClick={() => {
                         value.addToBasket(id);
-                        // value.onModel(id);
+                        value.onModal(id);
                       }}
                     >
                       {inBasket ? "inBasket" : "add to basket"}

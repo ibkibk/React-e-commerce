@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Details from "../Component/Details";
-import Basket from "../Component/Basket";
+import Basket from "../Component/Basket/Basket";
 import NotFound from "../Component/NotFound";
 import ProductList from "../Component/ProductList";
 import NavBar from "../Component/NavBar";

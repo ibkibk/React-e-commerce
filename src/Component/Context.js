@@ -7,9 +7,13 @@ export default class ProductProvider extends Component {
   state = {
     products: [],
     detailProduct: detailProduct,
-    basket: [],
+    basket: storeProducts,
+    // basket: [],
     isModalOpen: false,
     productOfModal: detailProduct,
+    basketSubTotal: 0,
+    basketTax: 0,
+    basketTotal: 0,
   };
 
   componentDidMount() {
@@ -73,6 +77,22 @@ export default class ProductProvider extends Component {
     });
   };
 
+  increment = (id) => {
+    console.log("increment methods");
+  };
+
+  decrement = (id) => {
+    console.log("decrement methods");
+  };
+
+  removeItem = (id) => {
+    console.log("removeItem methods");
+  };
+
+  clearBasket = () => {
+    console.log("clearBasket methods");
+  };
+
   render() {
     return (
       <ProductContext.Provider
@@ -82,6 +102,10 @@ export default class ProductProvider extends Component {
           addToBasket: this.addToBasket,
           onModal: this.onModal,
           offModal: this.offModal,
+          increment: this.increment,
+          decrement: this.decrement,
+          removeItem: this.removeItem,
+          clearBasket: this.clearBasket,
         }}
       >
         {this.props.children}

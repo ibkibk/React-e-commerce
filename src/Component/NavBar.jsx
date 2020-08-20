@@ -23,7 +23,7 @@ const NavBar = () => {
       <Menu.Item>
         <Input icon="search" placeholder="Search..." />
       </Menu.Item>
-      <Button>hello from navbar</Button>
+      {/* <Button>hello from navbar</Button> */}
     </div>
   );
 };
