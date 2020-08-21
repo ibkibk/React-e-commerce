@@ -1,7 +1,7 @@
 import React from "react";
 import BasketItem from "./BasketItem";
 
-function BasketList({ value }) {
+const BasketList = ({ value }) => {
   const { basket } = value;
   return (
     <div className="container-fluid">
@@ -10,6 +10,6 @@ function BasketList({ value }) {
       })}
     </div>
   );
-}
+};
 
 export default BasketList;
