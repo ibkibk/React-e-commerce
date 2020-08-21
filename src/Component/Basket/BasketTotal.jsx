@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function BasketTotal({ value }) {
+const BasketTotal = ({ value }) => {
   const { subTotal, tax, total, clearBasket } = value;
   return (
     <div className="container">
@@ -32,6 +32,6 @@ function BasketTotal({ value }) {
       </div>
     </div>
   );
-}
+};
 
 export default BasketTotal;

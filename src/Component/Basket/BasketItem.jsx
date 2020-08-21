@@ -1,6 +1,6 @@
 import React from "react";
 
-function BasketItem({ item, value }) {
+const BasketItem = ({ item, value }) => {
   const { id, title, img, price, total, count } = item;
   const { increment, decrement, removeItem } = value;
   return (
@@ -47,10 +47,10 @@ function BasketItem({ item, value }) {
         </div>
       </div>
       <div className="col-10 mx-auto col-lg-2">
-        <strong className="d-lg-none">item total:$ {total}</strong>
+        <strong className="cart-icon">item total:$ {total}</strong>
       </div>
     </div>
   );
-}
+};
 
 export default BasketItem;
