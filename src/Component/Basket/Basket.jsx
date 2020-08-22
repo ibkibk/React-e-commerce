@@ -4,7 +4,6 @@ import EmptyBasket from "./EmptyBasket";
 import { ProductConsumer } from "../Context";
 import BasketList from "./BasketList";
 import BasketTotal from "./BasketTotal";
-import NavBar from "../NavBar";
 
 const Basket = () => {
   return (
@@ -19,7 +18,6 @@ const Basket = () => {
                 <BasketCol />
                 <BasketList value={value} />
                 <BasketTotal value={value} />
-                <NavBar value={value} />
               </div>
             );
           } else {

@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Product from "./Product";
 import { ProductConsumer } from "./Context";
+import Pagination from "./Pagination";
 
 const ProductList = () => {
   return (
@@ -15,6 +16,7 @@ const ProductList = () => {
                 });
               }}
             </ProductConsumer>
+            {/* <Pagination /> */}
           </div>
         </div>
       </div>
