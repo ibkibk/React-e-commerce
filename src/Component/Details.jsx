@@ -34,7 +34,7 @@ const Details = () => {
                 </h4>
                 <h4>
                   <strong>
-                    price: <span>$</span>
+                    price: <span>£</span>
                     {price}
                   </strong>
                 </h4>

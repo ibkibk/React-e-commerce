@@ -37,7 +37,7 @@ const Product = ({ product }) => {
         <div className="card-footer d-flex justify-content-between">
           <p className="align-self-center mb-0">{title}</p>
           <h5 style={{ marginBottom: "25px" }}>
-            <span>$</span>
+            <span>£</span>
             {price}
           </h5>
         </div>

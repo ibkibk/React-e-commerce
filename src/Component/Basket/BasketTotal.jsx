@@ -18,15 +18,15 @@ const BasketTotal = ({ value }) => {
           </Link>
           <h5>
             <span className="text-title">subtotal:</span>
-            <strong>${subTotal}</strong>
+            <strong>£{subTotal}</strong>
           </h5>
           <h5>
             <span className="text-title">tax:</span>
-            <strong>${tax}</strong>
+            <strong>£{tax}</strong>
           </h5>
           <h5>
             <span className="text-title">total:</span>
-            <strong>${total}</strong>
+            <strong>£{total}</strong>
           </h5>
         </div>
       </div>
