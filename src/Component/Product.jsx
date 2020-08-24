@@ -2,20 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ProductConsumer } from "../Component/Context";
 import PropTypes from "prop-types";
+import style from "./Product.module.scss";
 
 const Product = ({ product }) => {
   const { id, title, img, price, inBasket } = product;
   return (
-    <div className="col-9  mx-auto col-md-6 col-lg-3 my-3">
-      <div className="card">
+    <div className={style.wrapper}>
+      <div className={style.card}>
         <ProductConsumer>
           {(value) => (
-            <div
-              className="img-container p-5"
-              onClick={() => value.handleDetail(id)}
-            >
+            <div className={style.img} onClick={() => value.handleDetail(id)}>
               <Link to="/details">
-                <img src={img} alt="product" className="card-img-top" />
+                <img src={img} alt="product" className={style.cardImg} />
               </Link>
               <button
                 className="card-btn"
@@ -28,15 +26,16 @@ const Product = ({ product }) => {
                 {inBasket ? (
                   <p disabled>in basket</p>
                 ) : (
-                  <p>not in the basket</p>
+                  <p>Add to the basket</p>
                 )}{" "}
               </button>
             </div>
           )}
         </ProductConsumer>
-        <div className="card-footer d-flex justify-content-between">
-          <p className="align-self-center mb-0">{title}</p>
-          <h5 style={{ marginBottom: "25px" }}>
+        <hr />
+        <div className={style.footer}>
+          <p className={style.title}>{title}</p>
+          <h5>
             <span>£</span>
             {price}
           </h5>
