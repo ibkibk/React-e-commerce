@@ -27,7 +27,7 @@ const Product = ({ product }) => {
                   <p disabled>in basket</p>
                 ) : (
                   <p>Add to the basket</p>
-                )}{" "}
+                )}
               </button>
             </div>
           )}
