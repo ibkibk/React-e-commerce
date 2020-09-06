@@ -42,7 +42,7 @@ const BasketItem = ({ item, value }) => {
       </div>
       <div className="col-10 mx-auto col-lg-2">
         <div className="cart-icon" onClick={() => removeItem(id)}>
-          <strong>Remove</strong>
+          <strong className="remove">Remove</strong>
         </div>
       </div>
       <div className="col-10 mx-auto col-lg-2">
