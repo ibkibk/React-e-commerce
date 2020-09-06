@@ -2,32 +2,6 @@
   text-align: center;
 }
 
-/* .top {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.btn-black {
-  background: transparent;
-  text-transform: capitalize;
-  font-size: 0.8rem !important;
-  color: red;
-  border-radius: 0 !important;
-  border: 0.1rem red !important;
-}
-
-.btn-black:hover {
-  background: rebeccapurple !important;
-  color: black !important;
-}
-
-.cart-icon {
-  cursor: pointer;
-  font-size: 1.2rem;
-  color: black;
-} */
-
 .span-btn {
   cursor: pointer;
 }
