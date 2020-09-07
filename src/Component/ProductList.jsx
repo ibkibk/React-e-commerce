@@ -16,7 +16,6 @@ const ProductList = () => {
                 });
               }}
             </ProductConsumer>
-            {/* <Pagination /> */}
           </div>
         </div>
       </div>
