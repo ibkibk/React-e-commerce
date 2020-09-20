@@ -9,6 +9,7 @@ const ProductList = () => {
       <div className="py-5">
         <div className="container">
           <div className="row">
+            //products added//
             <ProductConsumer>
               {(value) => {
                 return value.products.map((product) => {
