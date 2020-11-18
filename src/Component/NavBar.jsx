@@ -27,7 +27,6 @@ export default class NavBar extends Component {
             </ProductConsumer>
           </Menu>
         </Menu>
-
         <Menu.Item>
           <Input icon="search" placeholder="Search..." />
         </Menu.Item>

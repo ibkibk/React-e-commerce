@@ -15,7 +15,6 @@ const Product = ({ product }) => {
               <Link to="/details">
                 <img src={img} alt="product" className={style.cardImg} />
               </Link>
-              //thats updates the navbar//
               <button
                 className="card-btn"
                 disabled={inBasket ? true : false}
@@ -27,8 +26,8 @@ const Product = ({ product }) => {
                 {inBasket ? (
                   <p disabled>in basket</p>
                 ) : (
-                  <p>Add to the basket</p>
-                )}
+                    <p>Add to the basket</p>
+                  )}
               </button>
             </div>
           )}
