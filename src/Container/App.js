@@ -8,7 +8,6 @@ function App() {
     <ProductProvider>
       <div className="App">
         <Routes />
-        <div></div>
       </div>
     </ProductProvider>
   );
